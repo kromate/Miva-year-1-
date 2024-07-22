@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Board of Trustees - Fashion House</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <script>
+        function learnMore(Name) {
+            alert(`You are learning more about '${Name}'`);
+        }
+    </script>
 </head>
 
 <body>
@@ -24,14 +29,21 @@
     <main>
         <h2>Board of Trustees</h2>
         <div class="trustee">
-            <img src="trustee1.jpg" alt="Trustee 1">
-            <p>John Doe</p>
+            <img src="./assets/img/kachi.jpeg" alt="Kachi">
+            <p>Dikachi Nze</p>
+            <button onclick="learnMore('Dikachi Nze')" class='btn'>Learn More</button>
         </div>
         <div class="trustee">
-            <img src="trustee2.jpg" alt="Trustee 2">
-            <p>Jane Smith</p>
+            <img src="./assets/img/seb.jpeg" alt="Seb">
+            <p>Sebastine Odeh</p>
+            <button onclick="learnMore('Sebastine Odeh')" class='btn'>Learn More</button>
         </div>
-        <!-- Add more trustees as needed -->
+        <div class="trustee">
+            <img src="./assets/img/tony.png" alt="Tony">
+            <p>Anthony Akpan</p>
+            <button onclick="learnMore('Anthony Akpan')" class='btn'>Learn More</button>
+        </div>
+
     </main>
 
     <footer>
